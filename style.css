@@ -1,0 +1,88 @@
+.container {
+  width: 600px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+input[type=text] {
+  width: 100%;
+  display: block;
+  height: 28px;
+  padding: 3px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  display: block;
+  color: white;
+  background: #3cb878;
+  border: 0px;
+  margin-top: 5px;
+  height: 30px;
+  margin-bottom: 6px;
+}
+
+.newsletter-box{
+  border: solid thin #cfcfcf;
+  padding: 20px;
+  color: grey;
+  border-radius: 3px;
+  position: relative;
+}
+
+input[type=checkbox] {
+  display: inline;
+  position: relative;
+  top: 1px;
+  left: 0px
+}
+
+p {
+  display:inline;
+}
+
+.newsletter-box h3 {
+  margin-top: 0px;
+}
+  
+.close {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  cursor: pointer;
+}
+
+.question {
+  width: 100px;
+  height: 100px;
+  background: #3cb878;
+  border-radius: 50%;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px
+}
+
+.card {
+  background: #3cb878;
+  width: 180px;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 2px grey;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.card-holder {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  
+}
