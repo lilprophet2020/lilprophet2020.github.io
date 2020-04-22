@@ -1,90 +1,93 @@
 body {
-  padding: 0px; 
+  padding: 0px;
   margin: 0px;
-}
-
-.header img {
-  max-width: 100%;
-  height: auto;
+  letter-spacing: 2px;
 }
 
 .header {
+  background: #65ccb8;;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header a {
+  padding: 0px 40px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: Josefin Sans;
+  font-size: 40px;
+}
+
+a:hover {
+  color: #57ba98;
+  transition: 0.5s;
+}
+
+.left {
+  background-image: url("https://media.comicbook.com/2017/04/hayden-christensen-anakin-skywalker-star-wars-990926-1280x0.jpg"); /* The image used */
+  height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
   position: relative;
+}
+
+.quote {
+  height: 400px;
+  width: 37%;
+  background: #57ba98;;
+  color: white;
+  font-family: Abril Fatface;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  
+}
+
+.quoter {
+  position: absolute;
+  color: white;
+  font-size: 200px;
+  top: -10%;
+  left: 0%;
+}
+
+
+.main {
+  display: flex;
+  height: 600px;
+}
+
+.right {
+  width: 55%;
+  font-family: Josefin Sans;
+  font-size: 25px;
+  margin: 35px;
+  color: #182628;
 }
 
 .text {
   position: absolute;
-  left: 30%;
-  top: 60%;
+  left: 20%;
+  top: 45%;
   font-family: 'Abril Fatface', cursive;
-  color: #222;
+  color: white;
 }
 
 .text p {
-  font-size: 30px; 
+  font-size: 50px; 
   margin: 0px}
 
 .text h1 {
-  font-size: 60px; 
+  font-size: 70px; 
   margin: 0px}
-
-.main {
-  width: 50%;
-  color: #222;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.desc {
-  color: #222;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 17px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.maintitle {
-  font-family: Josefin Sans;
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.footer {
-  position: relative;
-  background: #444444;
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-align: center;
-  line-height: 100px;
-  font-family: Abril Fatface;
-  font-size: 30px
-}
-
-hr {    
-  width: 50%;
-  border: none;
-    height: 5px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333;}
-
-.quote {
-  position: absolute;
-  color: white;
-  font-size: 130px;
-  top: 0%;
-}
-
-ul {margin-bottom: 40px;}
 
 .subtitle {
   font-family: Merriweather; 
@@ -99,16 +102,46 @@ ul {margin-bottom: 40px;}
   font-weight: italic;
   font-size: 15px;
 }
+  
+.desc {
+  color: #222;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.maintitle {
+  font-family: Josefin Sans;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+  
 
 @media only screen and (max-width: 1000px) {
+  .header {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+  
+  }
+  
+  ul {margin-bottom: 40px;}
+
+  .text {  
+    left: 20%;
+    top: 45%;}
+  
   .text p {
     font-size: 15px;
   }
   .text h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   
-  .footer {
-  font-size: 15px;
+  .right {font-size: 15px;}
+
 }
 }
