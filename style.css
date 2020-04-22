@@ -1,88 +1,114 @@
-.container {
-  width: 600px;
-  font-family: 'Open Sans Condensed', sans-serif;
+body {
+  padding: 0px; 
+  margin: 0px;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  font-family: 'Abril Fatface', cursive;
+  color: #222;
+}
+
+.text p {
+  font-size: 30px; 
+  margin: 0px}
+
+.text h1 {
+  font-size: 60px; 
+  margin: 0px}
+
+.main {
+  width: 50%;
+  color: #222;
+  font-family: 'Josefin Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
-  
-}
-
-input[type=text] {
-  width: 100%;
-  display: block;
-  height: 28px;
-  padding: 3px;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-button {
-  width: 100%;
-  display: block;
-  color: white;
-  background: #3cb878;
-  border: 0px;
-  margin-top: 5px;
-  height: 30px;
-  margin-bottom: 6px;
-}
-
-.newsletter-box{
-  border: solid thin #cfcfcf;
-  padding: 20px;
-  color: grey;
-  border-radius: 3px;
-  position: relative;
-}
-
-input[type=checkbox] {
-  display: inline;
-  position: relative;
-  top: 1px;
-  left: 0px
-}
-
-p {
-  display:inline;
-}
-
-.newsletter-box h3 {
-  margin-top: 0px;
-}
-  
-.close {
-  position: absolute;
-  top: 0px;
-  right: 7px;
-  cursor: pointer;
-}
-
-.question {
-  width: 100px;
-  height: 100px;
-  background: #3cb878;
-  border-radius: 50%;
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  position: fixed;
-  bottom: 10px;
-  right: 10px
-}
-
-.card {
-  background: #3cb878;
-  width: 180px;
-  color: white;
-  text-align: center;
-  border-radius: 2px;
-  box-shadow: 0px 0px 5px 2px grey;
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
-
-.card-holder {
-  display: flex;
-  justify-content: space-around;
+  padding: 5px;
+  font-size: 20px;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.desc {
+  color: #222;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.maintitle {
+  font-family: Josefin Sans;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  position: relative;
+  background: #444444;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-family: Abril Fatface;
+  font-size: 30px
+}
+
+hr {    
+  width: 50%;
+  border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333;}
+
+.quote {
+  position: absolute;
+  color: white;
+  font-size: 130px;
+  top: 0%;
+}
+
+ul {margin-bottom: 40px;}
+
+.subtitle {
+  font-family: Merriweather; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.subsub {
+  font-family: Merriweather;
+  font-weight: italic;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text p {
+    font-size: 15px;
+  }
+  .text h1 {
+    font-size: 25px;
+  }
   
+  .footer {
+  font-size: 15px;
+}
 }
